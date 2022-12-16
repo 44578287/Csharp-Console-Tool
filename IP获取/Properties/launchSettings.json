@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "IP获取": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
