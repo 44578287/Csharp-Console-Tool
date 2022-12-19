@@ -13,7 +13,7 @@ namespace MD5
         public static bool InitializationEncrypt(string KeyPath, string Password)
         {
             bool first = false;
-            if (!File.Exists(KeyPath))//判断KEY文件是否存在
+            if (File.Exists(KeyPath))//判断KEY文件是否存在
             {
                 first = true;
                 string uuid = System.Guid.NewGuid().ToString();//生成UUID

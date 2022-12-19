@@ -108,7 +108,7 @@ Console.WriteLine(KEY);
 
 Console.WriteLine(加密.InitializationUser("Cookie","admin", "我爱你", KEY!));
 Console.WriteLine(加密.DecryptUserCookie("Cookie", "admin", KEY!));*/
-string? KEY = null;
+/*string? KEY = null;
 string? Cookie = null;
 while (KEY == null || Cookie == null)
 {
@@ -117,20 +117,43 @@ while (KEY == null || Cookie == null)
     {
         加密.InitializationEncrypt("Cookie/KEY", "44578287");//如果没有密钥就生成一个
         KEY = 加密.DecryptEncrypt("Cookie/KEY", "44578287");//解密刚生成密钥
-        Console.WriteLine(加密.InitializationUser("Cookie", "admin", "我爱你", KEY!, true));
+        Console.WriteLine(加密.InitializationUser("Cookie", "admin", "你姐不出来的啦", KEY!, true));
     }
     KEY = 加密.DecryptEncrypt("Cookie/KEY", "44578287");//解密刚生成密钥
     Console.WriteLine(KEY);
     Console.WriteLine(Cookie = 加密.DecryptUserCookie("Cookie", "admin", KEY!));
     if (Cookie == null)
     {
-        Console.WriteLine(加密.InitializationUser("Cookie", "admin", "我爱你", KEY!, true));
+        Console.WriteLine(加密.InitializationUser("Cookie", "admin", "你姐不出来的啦", KEY!, true));
     }
+}*/
+
+
+//Console.WriteLine(MD5.DES.TextDecrypt("U2FsdGVkX1/CXPOU9FcWGVMxBzDtAO4IFIXjkH9KH20=", "p&s;wd$/"));
+
+
+byte[] DES = Encoding.Default.GetBytes("p&s;wd$/");
+#pragma warning disable SYSLIB0021 // 类型或成员已过时
+DESCryptoServiceProvider des = new DESCryptoServiceProvider();
+#pragma warning restore SYSLIB0021 // 类型或成员已过时
+
+using (MemoryStream ms = new MemoryStream())
+{
+    byte[] inData = Convert.FromBase64String("c9c1eb210d7bb451b0ae577876d9456d");
+
+    using (CryptoStream cs = new CryptoStream(ms, des.CreateDecryptor(DES, Encoding.Default.GetBytes("we2?、6、/")), CryptoStreamMode.Write))
+    {
+        cs.Write(inData, 0, inData.Length);
+        cs.FlushFinalBlock();
+    }
+
+    Console.WriteLine(Encoding.Default.GetString(ms.ToArray()));
+
+
+
+
+
 }
 
 
-
-
-
-
-Console.WriteLine("DateTime总共花费{0}ms.", System.DateTime.Now.Subtract(beforDT).TotalMilliseconds);
+        Console.WriteLine("DateTime总共花费{0}ms.", System.DateTime.Now.Subtract(beforDT).TotalMilliseconds);

@@ -234,6 +234,10 @@ namespace MD5
         /// <param name="str"></param>
         public static string ToDES(string str)
         {
+            if (str == null)
+            {
+                return "SBSBSBSB";
+            }
             if (str.Length <= 8)
             {
                 str = str.ToLower().PadRight(8, 'a');//在字符串右边加a加满8位！！！
