@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <PackageReference Include="Yitter.IdGenerator" Version="1.0.14" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    <Reference Include="LoongEgg.LoongLogger">
+      <HintPath>..\..\Cloudreve-API-DLL\Cloudreve-API-DLL\bin\Debug\net6.0\LoongEgg.LoongLogger.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

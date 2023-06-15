@@ -69,8 +69,8 @@ string 文件MD5(string fileName)
 //string cookie = "你好哇";
 
 DateTime beforDT = System.DateTime.Now;
-
-/*Guid uuid = System.Guid.NewGuid();
+/*
+Guid uuid = System.Guid.NewGuid();
 Console.WriteLine(uuid);
 Console.WriteLine(cookie);
 
@@ -108,7 +108,7 @@ Console.WriteLine(KEY);
 
 Console.WriteLine(加密.InitializationUser("Cookie","admin", "我爱你", KEY!));
 Console.WriteLine(加密.DecryptUserCookie("Cookie", "admin", KEY!));*/
-/*string? KEY = null;
+string? KEY = null;
 string? Cookie = null;
 while (KEY == null || Cookie == null)
 {
@@ -126,13 +126,13 @@ while (KEY == null || Cookie == null)
     {
         Console.WriteLine(加密.InitializationUser("Cookie", "admin", "你姐不出来的啦", KEY!, true));
     }
-}*/
+}
 
 
 //Console.WriteLine(MD5.DES.TextDecrypt("U2FsdGVkX1/CXPOU9FcWGVMxBzDtAO4IFIXjkH9KH20=", "p&s;wd$/"));
 
 
-byte[] DES = Encoding.Default.GetBytes("p&s;wd$/");
+/*byte[] DES = Encoding.Default.GetBytes("p&s;wd$/");
 #pragma warning disable SYSLIB0021 // 类型或成员已过时
 DESCryptoServiceProvider des = new DESCryptoServiceProvider();
 #pragma warning restore SYSLIB0021 // 类型或成员已过时
@@ -154,6 +154,17 @@ using (MemoryStream ms = new MemoryStream())
 
 
 }
+*/
 
 
-        Console.WriteLine("DateTime总共花费{0}ms.", System.DateTime.Now.Subtract(beforDT).TotalMilliseconds);
+string path = @"C:\Projects\vs2022\cloudreve-API";
+DirectoryInfo root = new DirectoryInfo(path);
+DirectoryInfo[] files = root.GetDirectories();
+
+
+
+foreach (var file in files)
+Console.WriteLine(file.Name);
+
+
+Console.WriteLine("DateTime总共花费{0}ms.", System.DateTime.Now.Subtract(beforDT).TotalMilliseconds);

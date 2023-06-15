@@ -2,18 +2,15 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>TCP_UDP通信</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="LoongEgg.LoongLogger">
-      <HintPath>..\..\cloudreve-API\cloudreve调用\DLL\LoongEgg.LoongLogger.dll</HintPath>
+      <HintPath>..\..\LoongLog\LoongEgg.LoongLogger\bin\Debug\LoongEgg.LoongLogger.dll</HintPath>
     </Reference>
   </ItemGroup>
 
