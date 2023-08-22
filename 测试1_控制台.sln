@@ -96,7 +96,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "遍历文件夹", "遍历�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP-UDP通信", "TCP-UDP通信\TCP-UDP通信.csproj", "{282DD2E6-2B20-42DE-9207-7881BF0C8851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP-UDP客户端", "TCP-UDP客户端\TCP-UDP客户端.csproj", "{C2235435-E82C-4108-963F-C94B09240325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCP-UDP客户端", "TCP-UDP客户端\TCP-UDP客户端.csproj", "{C2235435-E82C-4108-963F-C94B09240325}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FPS监测", "FPS监测\FPS监测.csproj", "{AF537535-8864-472F-937A-3FA15265B853}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FPS监测2", "FPS监测2\FPS监测2.csproj", "{64DBF913-60E4-40D8-A913-3139A29EF688}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "单文件打包测试", "单文件打包测试\单文件打包测试.csproj", "{1567D69B-E0B8-40EF-8AD1-86CA51E04C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "数据库连接池", "数据库连接池\数据库连接池.csproj", "{D486E223-8070-4D91-9625-2201F7BC92D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -280,6 +288,22 @@ Global
 		{C2235435-E82C-4108-963F-C94B09240325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2235435-E82C-4108-963F-C94B09240325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2235435-E82C-4108-963F-C94B09240325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF537535-8864-472F-937A-3FA15265B853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF537535-8864-472F-937A-3FA15265B853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF537535-8864-472F-937A-3FA15265B853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF537535-8864-472F-937A-3FA15265B853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DBF913-60E4-40D8-A913-3139A29EF688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DBF913-60E4-40D8-A913-3139A29EF688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DBF913-60E4-40D8-A913-3139A29EF688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DBF913-60E4-40D8-A913-3139A29EF688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1567D69B-E0B8-40EF-8AD1-86CA51E04C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1567D69B-E0B8-40EF-8AD1-86CA51E04C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1567D69B-E0B8-40EF-8AD1-86CA51E04C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1567D69B-E0B8-40EF-8AD1-86CA51E04C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D486E223-8070-4D91-9625-2201F7BC92D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D486E223-8070-4D91-9625-2201F7BC92D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D486E223-8070-4D91-9625-2201F7BC92D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D486E223-8070-4D91-9625-2201F7BC92D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
